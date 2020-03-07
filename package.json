@@ -1,6 +1,7 @@
 {
   "name": "pictures",
   "version": "0.1.0",
+  "homepage": "http://altzlab.github.io/altzlab",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -17,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:bundle": "webpack --config webpack.config.js"
+    "deploy": "yarn run build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,6 +37,7 @@
   },
   "devDependencies": {
     "@zendeskgarden/react-loaders": "^8.1.1",
+    "gh-pages": "^2.2.0",
     "webpack-cli": "^3.3.11"
   }
 }
