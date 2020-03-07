@@ -1,0 +1,253 @@
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+
+.app {
+    text-align: center;
+    background-color: #f7f7f7;
+    min-height: 100vh;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    display: grid;
+    grid-template-columns: 84% 16%;
+    font-family: "David CLM", serif;
+}
+
+.file{
+    height: 20px;
+    width: 200px;
+}
+
+.main {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 75% 25%;
+}
+
+.backwards{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    top: 100px;
+    left: 100px;
+    cursor: pointer;
+}
+
+.topMain {
+    margin-top: 7%;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    grid-template-columns: 30% 10% 25%;
+    grid-template-rows: 30% 30% 30%;
+
+    grid-template-areas:
+            "firstOp  pictureMenu sixthOp"
+            "secondOp  pictureMenu fifthOP"
+            "thirdOp none fourthOp "
+}
+
+.pictureWrapper{
+    display: grid;
+    grid-area: pictureMenu;
+}
+
+.firstOp,.secondOp, .thirdOp{
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+.fourthOp,.fifthOP,.sixthOp{
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+.peopleIcon{
+    position: relative;
+    top: 15px;
+    height: 60px;
+}
+.firstOp{
+    grid-area: firstOp;
+    position: relative;
+    right: 60px;
+    top: 70px;
+}
+.secondOp{
+    grid-area: secondOp;
+    position: relative;
+    right: 0;
+    top: 20px;
+}
+.thirdOp{
+    grid-area: thirdOp;
+    position: relative;
+    left: 110px;
+    bottom: 30px;
+}
+.fourthOp{
+    grid-area: fourthOp;
+    position: relative;
+    right: 110px;
+    bottom: 30px;
+}
+.fifthOP{
+    grid-area: fifthOP;
+    position: relative;
+    left: 0;
+    top: 20px;
+}
+
+.sixthOp{
+    grid-area: sixthOp;
+    position: relative;
+    left: 60px;
+    top: 70px;
+}
+
+.picture {
+    height: 210px;
+    width: 210px;
+    border-radius: 200px;
+    border: 5px solid black;
+    justify-self: center;
+}
+
+.realPicture{
+    border-radius: 100px;
+}
+
+.pictureName {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+    color: black;
+}
+
+.options_wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0 80px 100px 80px;
+    justify-items: center;
+}
+
+.option, .selected_option {
+    border: 3px solid #2f0c42;
+    border-radius: 20px;
+    height: 80px;
+    width: 120px;
+    cursor: pointer;
+    color: #2f0c42;
+    transition: all 0.2s ease-in;
+    display: grid;
+    font-weight: 700;
+    z-index: 1;
+    grid-template-rows: 30% 60%;
+    padding: 0 3px;
+}
+
+.optionText{
+    font-size: 17px;
+    align-self: start;
+    z-index: 1;
+}
+.showListButton{
+    justify-self: right;
+    padding-right: 10px;
+    z-index: 100;
+    position: relative;
+
+}
+.showListIcon:hover{
+    border: 2px solid black;
+}
+
+.option:hover {
+    background: rgba(122, 43, 247, 0.07);
+    transition: all 0.3s ease-in;
+    color: #000000;
+}
+
+.selected_option {
+    background: #2f0c42;
+    color: white;
+}
+
+.loadingContainer{
+   height: 100%;
+    width: 100%;
+}
+
+.loading {
+    margin-top: 40px;
+    border: 2px solid #111826;
+    border-radius: 20px;
+    width: 55%;
+    height: 15px;
+    justify-self: center;
+    z-index: 0;
+    background: #f7f7f7;
+    position: relative;
+}
+
+.loadingPercentage{
+    font-size: 20px;
+    color:black;
+}
+
+.rightMenu {
+    background: #111826;
+    height: 94%;
+    width: 94%;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+.groupDisplacer{
+    height: max-content;
+    width: 78%;
+    border-radius: 10px;
+    background: #d2b4d6;
+    justify-self: center;
+    margin-top: 60%;
+    display: grid;
+}
+.listTitle {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    height: max-content;
+    padding: 5px 20px;
+}
+.namesList {
+    color: #200437;
+    padding: 25px 0 10px 0;
+    font-size: 21px;
+    border-radius: 6px;
+    background: #f2f2f2;
+    display: grid;
+    justify-items: right;
+    max-height: 400px;
+    height: 400px;
+    align-content: start;
+    overflow: auto;
+}
+.listItem{
+    /*display: grid;*/
+    /*grid-template-columns: 90% 10% ;*/
+}
+.deletePerson{
+    padding: 0 10px 0 20px;
+    height: 14px;
+    width: 14px;
+    cursor: pointer;
+}
+
+.instructions{
+    color: white;
+    border-top: 2px solid white;
+    font-size: 18px;
+}
+
