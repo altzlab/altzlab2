@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/altzlab2/static/css/main.6b626cec.chunk.css",
+    "main.css": "/altzlab2/static/css/main.defc374e.chunk.css",
     "main.js": "/altzlab2/static/js/main.0f24622e.chunk.js",
     "main.js.map": "/altzlab2/static/js/main.0f24622e.chunk.js.map",
     "runtime-main.js": "/altzlab2/static/js/runtime-main.5e645191.js",
@@ -8,9 +8,9 @@
     "static/js/2.381d4690.chunk.js": "/altzlab2/static/js/2.381d4690.chunk.js",
     "static/js/2.381d4690.chunk.js.map": "/altzlab2/static/js/2.381d4690.chunk.js.map",
     "index.html": "/altzlab2/index.html",
-    "precache-manifest.cb8841f2ad0bb1d62d6a46f0a812f913.js": "/altzlab2/precache-manifest.cb8841f2ad0bb1d62d6a46f0a812f913.js",
+    "precache-manifest.96b67c40d40b2972db9e577d7145df24.js": "/altzlab2/precache-manifest.96b67c40d40b2972db9e577d7145df24.js",
     "service-worker.js": "/altzlab2/service-worker.js",
-    "static/css/main.6b626cec.chunk.css.map": "/altzlab2/static/css/main.6b626cec.chunk.css.map",
+    "static/css/main.defc374e.chunk.css.map": "/altzlab2/static/css/main.defc374e.chunk.css.map",
     "static/js/2.381d4690.chunk.js.LICENSE.txt": "/altzlab2/static/js/2.381d4690.chunk.js.LICENSE.txt",
     "static/media/delete.png": "/altzlab2/static/media/delete.ceb7f855.png",
     "static/media/endView.jpeg": "/altzlab2/static/media/endView.372dbf44.jpeg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.5e645191.js",
     "static/js/2.381d4690.chunk.js",
-    "static/css/main.6b626cec.chunk.css",
+    "static/css/main.defc374e.chunk.css",
     "static/js/main.0f24622e.chunk.js"
   ]
 }
