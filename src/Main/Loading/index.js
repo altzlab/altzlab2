@@ -4,19 +4,30 @@ import {Line} from 'rc-progress';
 class Loading extends React.Component {
 
     calcLoading = () => {
-        if(this.props.state.currentPic === 0){
-            return 0;
+        let selected = this.countSelectedPictures();
+        return Math.round((selected) / (this.props.state.userData.pictures.length) * 100);
+    };
+
+    countSelectedPictures = () => {
+        let selectedPictures = 0;
+        let counter = 0;
+        let picturesLen = this.props.state.userData.pictures.length;
+
+        while (counter < picturesLen) {
+            if (this.props.state.userData.pictures[counter].selected_option !== 0) {
+                ++selectedPictures;
+            }
+            ++counter;
         }
-        return Math.round((this.props.state.currentPic + 1) / (this.props.state.userData.pictures.length + 1) * 100);
+        return selectedPictures;
     };
 
     render() {
         return (
             <div className="loadingContainer">
-                <div >
+                <div>
                     <Line
                         percent={this.calcLoading()}
-                        //strokeWidth="4"
                         strokeColor="#111826"
                         className="loading"
                     >

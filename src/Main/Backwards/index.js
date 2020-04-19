@@ -5,7 +5,7 @@ class Backwards extends React.Component {
 
     onClick = () => {
         let newState = {...this.props.state};
-        if(newState.currentPic > 0){
+        if (newState.currentPic > 0) {
             newState.currentPic -= 1;
             newState.userData.pictures[newState.currentPic].selected_option = 0;
             this.props.updateState(newState);

@@ -8,8 +8,6 @@ import oneManMinus from './icons/minus.jpeg';
 import oneManShadow from './icons/shadow.jpeg';
 import PictureWrapper from "./PictureWrapper";
 
-
-
 class TopMain extends React.Component{
 
     render(){

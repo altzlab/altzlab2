@@ -1,5 +1,6 @@
 import React from 'react';
 import deleteIcon from './delete.png';
+
 class NamesList extends React.Component {
 
     getList = () => {

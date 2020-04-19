@@ -1,34 +1,103 @@
 @import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
 
+body {
+    font-family: "Alef Hebrew",
+    “Helvetica Neue”,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+.appContainer {
+    width: 100vw;
+    height: 100vh;
+}
+
 .app {
     text-align: center;
     background-color: #f7f7f7;
     min-height: 100vh;
+    width: 100vw;
     align-items: center;
     font-size: calc(10px + 2vmin);
     color: white;
     display: grid;
     grid-template-columns: 84% 16%;
-    font-family: "David CLM", serif;
+    font-family: "Alef Hebrew", serif;
 }
 
-.file{
-    height: 20px;
-    width: 200px;
+.init {
+    width: 100%;
+    height: 70%;
+    display: grid;
+    justify-items: center;
+}
+
+.peoplePhoto {
+    position: relative;
+    margin-top: 10%;
+}
+
+.file {
+    height: 30px;
+    width: 180px;
+    position: relative;
+    bottom: 200px;
 }
 
 .main {
     height: 100%;
     display: grid;
-    grid-template-rows: 75% 25%;
+    //grid-template-rows: 75% 25%;
 }
 
-.backwards{
+.beforeStartContainer {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    position: absolute;
+}
+
+.viewDiv {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 100;
+}
+
+.beforeStart {
+    height: 200px;
+    width: 500px;
+    border: 3px solid black;
+    justify-self: center;
+    align-self: center;
+    z-index: 3000;
+    text-align: center;
+    padding: 70px 30px 30px 30px;
+    background: white;
+    opacity: 1;
+    font-size: 22px;
+    display: grid;
+}
+
+.startButton {
+    align-self: end;
+    border-radius: 7px;
+    border: 2px solid #5c0b9e;
+    justify-self: center;
+    padding: 2px 40px;
+    cursor: pointer;
+}
+
+.backwards {
     position: absolute;
     width: 60px;
     height: 30px;
-    top: 100px;
-    left: 100px;
+    top: 70px;
+    left: 5%;
     cursor: pointer;
 }
 
@@ -42,79 +111,52 @@
     height: 100%;
 
     grid-template-columns: 30% 10% 25%;
-    grid-template-rows: 30% 30% 30%;
+    grid-template-rows: 20% 30% 30%;
 
-    grid-template-areas:
-            "firstOp  pictureMenu sixthOp"
-            "secondOp  pictureMenu fifthOP"
-            "thirdOp none fourthOp "
+    grid-template-areas: "firstOp  pictureWrapper sixthOp" "secondOp  pictureWrapper fifthOP" "thirdOp none fourthOp "
 }
 
-.pictureWrapper{
+.pictureWrapper {
+    grid-area: pictureWrapper;
     display: grid;
-    grid-area: pictureMenu;
+    position: relative;
+    top: 70%;
+
 }
 
-.firstOp,.secondOp, .thirdOp{
-    display: grid;
-    grid-template-columns: 45% 55%;
-}
-.fourthOp,.fifthOP,.sixthOp{
-    display: grid;
-    grid-template-columns: 75% 25%;
-}
-.peopleIcon{
-    position: relative;
-    top: 15px;
-    height: 60px;
-}
-.firstOp{
-    grid-area: firstOp;
-    position: relative;
-    right: 60px;
-    top: 70px;
-}
-.secondOp{
-    grid-area: secondOp;
-    position: relative;
-    right: 0;
-    top: 20px;
-}
-.thirdOp{
-    grid-area: thirdOp;
-    position: relative;
-    left: 110px;
-    bottom: 30px;
-}
-.fourthOp{
-    grid-area: fourthOp;
-    position: relative;
-    right: 110px;
-    bottom: 30px;
-}
-.fifthOP{
-    grid-area: fifthOP;
-    position: relative;
-    left: 0;
-    top: 20px;
-}
-
-.sixthOp{
-    grid-area: sixthOp;
-    position: relative;
-    left: 60px;
-    top: 70px;
-}
-
-.picture {
+.picture, .beforeSubmit {
     height: 210px;
     width: 210px;
     border-radius: 200px;
-    border: 5px solid black;
+    border: 4px solid black;
     justify-self: center;
 }
 
-.realPicture{
+.beforeSubmit {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    display: grid;
+    align-content: center;
+    margin: 0 20px;
+    background: #111626;
+}
+
+.submitButtonContainer {
+    display: grid;
+}
+
+.submitButton {
+    background: #f3f3f3;
+    border-radius: 3px;
+    width: 70px;
+    justify-self: center;
+    color: #111626;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.realPicture {
     border-radius: 100px;
 }
 
@@ -124,6 +166,64 @@
     letter-spacing: 2px;
     padding-bottom: 20px;
     color: black;
+}
+
+.firstOp, .secondOp, .thirdOp {
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+.fourthOp, .fifthOP, .sixthOp {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.peopleIcon {
+    position: relative;
+    top: 15px;
+    height: 60px;
+}
+
+.firstOp {
+    grid-area: firstOp;
+    position: relative;
+    right: 60px;
+    top: 70px;
+}
+
+.secondOp {
+    grid-area: secondOp;
+    position: relative;
+    right: 0;
+    top: 40px;
+}
+
+.thirdOp {
+    grid-area: thirdOp;
+    position: relative;
+    left: 110px;
+    bottom: 30px;
+}
+
+.fourthOp {
+    grid-area: fourthOp;
+    position: relative;
+    right: 110px;
+    bottom: 30px;
+}
+
+.fifthOP {
+    grid-area: fifthOP;
+    position: relative;
+    left: 0;
+    top: 40px;
+}
+
+.sixthOp {
+    grid-area: sixthOp;
+    position: relative;
+    left: 60px;
+    top: 70px;
 }
 
 .options_wrapper {
@@ -137,7 +237,7 @@
     border: 3px solid #2f0c42;
     border-radius: 20px;
     height: 80px;
-    width: 120px;
+    width: 122px;
     cursor: pointer;
     color: #2f0c42;
     transition: all 0.2s ease-in;
@@ -148,19 +248,21 @@
     padding: 0 3px;
 }
 
-.optionText{
-    font-size: 17px;
+.optionText {
+    font-size: 15.5px;
     align-self: start;
     z-index: 1;
 }
-.showListButton{
+
+.showListButton {
     justify-self: right;
     padding-right: 10px;
     z-index: 100;
     position: relative;
 
 }
-.showListIcon:hover{
+
+.showListIcon:hover {
     border: 2px solid black;
 }
 
@@ -175,8 +277,8 @@
     color: white;
 }
 
-.loadingContainer{
-   height: 100%;
+.loadingContainer {
+    height: 100%;
     width: 100%;
 }
 
@@ -192,62 +294,94 @@
     position: relative;
 }
 
-.loadingPercentage{
+.loadingPercentage {
     font-size: 20px;
-    color:black;
+    color: black;
 }
 
 .rightMenu {
     background: #111826;
     height: 94%;
+    max-height: 100vh;
     width: 94%;
     border-radius: 5px;
     display: grid;
-    grid-template-rows: 80% 20%;
+    grid-template-rows: 66% 30%;
+    overflow: hidden;
 }
-.groupDisplacer{
-    height: max-content;
+
+.groupDisplacer {
+    height: 90%;
     width: 78%;
     border-radius: 10px;
     background: #d2b4d6;
     justify-self: center;
-    margin-top: 60%;
+    margin-top: 10%;
     display: grid;
+    grid-template-rows: 10% 90%;
 }
+
 .listTitle {
     font-size: 20px;
     color: black;
     font-weight: bold;
-    height: max-content;
     padding: 5px 20px;
+    height: max-content;
 }
+
 .namesList {
     color: #200437;
     padding: 25px 0 10px 0;
-    font-size: 21px;
+    font-size: 15px;
     border-radius: 6px;
     background: #f2f2f2;
     display: grid;
     justify-items: right;
-    max-height: 400px;
-    height: 400px;
+    max-height: 100%;
     align-content: start;
     overflow: auto;
 }
-.listItem{
-    /*display: grid;*/
-    /*grid-template-columns: 90% 10% ;*/
-}
-.deletePerson{
+
+.deletePerson {
     padding: 0 10px 0 20px;
     height: 14px;
     width: 14px;
     cursor: pointer;
 }
 
-.instructions{
+.instructions {
     color: white;
     border-top: 2px solid white;
-    font-size: 18px;
+    font-size: 12px;
+    height: 100%;
+    overflow: auto;
 }
 
+@media (max-width: 1500px) {
+    .topMain {
+        grid-template-columns: 36% 12% 30%;
+        grid-template-rows: 24% 36% 36%;
+    }
+
+}
+
+@media (max-width: 1240px) {
+    .topMain {
+        grid-template-columns: 48% 15% 37%;
+        grid-template-rows: 19% 28.8% 28.8%;
+    }
+
+}
+
+@media (max-width: 1070px) {
+    .option, .selected_option {
+        width: 105px;
+        height: 75px;
+        font-weight: 700;
+        grid-template-rows: 17% 26.8% 26.8%;
+    }
+
+    .optionText {
+        font-size: 14px;
+    }
+}

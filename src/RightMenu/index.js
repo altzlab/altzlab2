@@ -2,8 +2,6 @@ import React from 'react';
 import NamesList from "./NamesList";
 import Instructions from "./Instructions";
 
-
-
 class RightMenu extends React.Component{
 
     getGroupTitle = () =>{

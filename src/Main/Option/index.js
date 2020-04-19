@@ -1,14 +1,12 @@
 import React from 'react';
 import ShowListButton from "./ShowListButton";
-import Picture from "../TopMain/Picture/indexc";
-
 
 class Option extends React.Component {
 
     getCurrentPic = () => {
         let currPicIndex = this.props.state.currentPic;
-        if(currPicIndex >  this.props.state.userData.pictures.length - 1){
-            return  this.props.state.userData.pictures[currPicIndex - 1];
+        if (currPicIndex > this.props.state.userData.pictures.length - 1) {
+            return this.props.state.userData.pictures[currPicIndex - 1];
         }
         let currPic = this.props.state.userData.pictures[currPicIndex];
         if (currPic.selected_option !== 0) {
@@ -20,18 +18,17 @@ class Option extends React.Component {
     incrementCurrPicIndex = () => {
         let newState = {...this.props.state};
         newState.currentPic += 1;
-        setTimeout(() => this.props.updateState(newState), 600);
+        this.props.updateState(newState);
     };
 
     onClick = () => {
         let newState = {...this.props.state};
-        let currPic = this.getCurrentPic();
+        this.getCurrentPic();
         let currPicIndex = this.props.state.currentPic;
 
-        if(currPicIndex < this.props.state.userData.pictures.length){
+        if (currPicIndex < this.props.state.userData.pictures.length) {
             newState.userData.pictures[currPicIndex].selected_option = this.props.num;
             this.props.updateState(newState);
-            this.incrementCurrPicIndex();
         }
     };
 
