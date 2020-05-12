@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+@import url(https://fonts.googleapis.com/earlyaccess/alefhebrew.css);
 
 body {
     font-family: "Alef Hebrew",
@@ -48,7 +48,6 @@ body {
 .main {
     height: 100%;
     display: grid;
-    //grid-template-rows: 75% 25%;
 }
 
 .beforeStartContainer {
@@ -121,7 +120,7 @@ body {
     display: grid;
     position: relative;
     top: 70%;
-
+    margin-top: 20px;
 }
 
 .picture, .beforeSubmit {
@@ -259,7 +258,7 @@ body {
     padding-right: 10px;
     z-index: 100;
     position: relative;
-
+    margin-bottom: 5px;
 }
 
 .showListIcon:hover {
@@ -313,33 +312,33 @@ body {
 .groupDisplacer {
     height: 90%;
     width: 78%;
+    overflow: hidden;
     border-radius: 10px;
     background: #d2b4d6;
     justify-self: center;
-    margin-top: 10%;
+    align-self: center;
     display: grid;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: max-content 100%;
 }
 
 .listTitle {
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     font-weight: bold;
     padding: 5px 20px;
-    height: max-content;
 }
 
 .namesList {
     color: #200437;
-    padding: 25px 0 10px 0;
-    font-size: 15px;
+    padding: 25px 0 0 0;
+    font-size: 18px;
     border-radius: 6px;
     background: #f2f2f2;
     display: grid;
     justify-items: right;
-    max-height: 100%;
     align-content: start;
     overflow: auto;
+    height: 73%;
 }
 
 .deletePerson {
@@ -383,5 +382,11 @@ body {
 
     .optionText {
         font-size: 14px;
+    }
+}
+
+@media (max-height: 680px) {
+    .namesList {
+        height: 65%;
     }
 }

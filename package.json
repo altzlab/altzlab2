@@ -1,7 +1,7 @@
 {
   "name": "pictures",
   "version": "0.1.0",
-  "homepage": "http://altzlab.github.io/altzlab",
+  "homepage": "http://altzlab.github.io/altzlab2",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
