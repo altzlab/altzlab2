@@ -11,7 +11,7 @@ class BeforeStart extends React.Component {
             <div className="beforeStartContainer">
                 <div className="viewDiv"></div>
                 <p className="beforeStart">
-                    <div>!היי, תודה שהסכמת להשתתף בניסוי שלנו</div>
+                    <div>!היי, דודה שהסכמת להשתתף בניסוי שלנו</div>
                     <div>כדי להתחיל צריך ללחוץ על הכפתור</div>
                     <div onClick={this.onClick} className="startButton">התחל</div>
                 </p>
