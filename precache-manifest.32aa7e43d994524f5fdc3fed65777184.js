@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6d156d012c50514bf153721cc8c97f9e",
+    "revision": "4372b04e9daebdab33c508535840d75d",
     "url": "/altzlab2/index.html"
   },
   {
-    "revision": "345203ed56e9b9477a12",
-    "url": "/altzlab2/static/css/main.c42f5228.chunk.css"
+    "revision": "b436c811d0ccea882e02",
+    "url": "/altzlab2/static/css/main.0e932cb2.chunk.css"
   },
   {
-    "revision": "f3d85af11ceb112449e1",
-    "url": "/altzlab2/static/js/2.381d4690.chunk.js"
+    "revision": "512cf735e64b076a123c",
+    "url": "/altzlab2/static/js/2.18c4e460.chunk.js"
   },
   {
-    "revision": "99bd0487192ec9e7d9ee8fbbd91ee444",
-    "url": "/altzlab2/static/js/2.381d4690.chunk.js.LICENSE.txt"
+    "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
+    "url": "/altzlab2/static/js/2.18c4e460.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "345203ed56e9b9477a12",
-    "url": "/altzlab2/static/js/main.0f24622e.chunk.js"
+    "revision": "b436c811d0ccea882e02",
+    "url": "/altzlab2/static/js/main.09f631b3.chunk.js"
   },
   {
-    "revision": "395dd3e786f4167e21dc",
-    "url": "/altzlab2/static/js/runtime-main.5e645191.js"
+    "revision": "42b3e7ea9c6dcf93cb47",
+    "url": "/altzlab2/static/js/runtime-main.e8428fea.js"
   },
   {
     "revision": "ceb7f85526bd8ad94e4f30bec0597dc3",

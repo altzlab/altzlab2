@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/altzlab2/static/css/main.c42f5228.chunk.css",
-    "main.js": "/altzlab2/static/js/main.0f24622e.chunk.js",
-    "main.js.map": "/altzlab2/static/js/main.0f24622e.chunk.js.map",
-    "runtime-main.js": "/altzlab2/static/js/runtime-main.5e645191.js",
-    "runtime-main.js.map": "/altzlab2/static/js/runtime-main.5e645191.js.map",
-    "static/js/2.381d4690.chunk.js": "/altzlab2/static/js/2.381d4690.chunk.js",
-    "static/js/2.381d4690.chunk.js.map": "/altzlab2/static/js/2.381d4690.chunk.js.map",
+    "main.css": "/altzlab2/static/css/main.0e932cb2.chunk.css",
+    "main.js": "/altzlab2/static/js/main.09f631b3.chunk.js",
+    "main.js.map": "/altzlab2/static/js/main.09f631b3.chunk.js.map",
+    "runtime-main.js": "/altzlab2/static/js/runtime-main.e8428fea.js",
+    "runtime-main.js.map": "/altzlab2/static/js/runtime-main.e8428fea.js.map",
+    "static/js/2.18c4e460.chunk.js": "/altzlab2/static/js/2.18c4e460.chunk.js",
+    "static/js/2.18c4e460.chunk.js.map": "/altzlab2/static/js/2.18c4e460.chunk.js.map",
     "index.html": "/altzlab2/index.html",
-    "precache-manifest.fa9dd4db7a86295a12d963d1a575cb76.js": "/altzlab2/precache-manifest.fa9dd4db7a86295a12d963d1a575cb76.js",
+    "precache-manifest.32aa7e43d994524f5fdc3fed65777184.js": "/altzlab2/precache-manifest.32aa7e43d994524f5fdc3fed65777184.js",
     "service-worker.js": "/altzlab2/service-worker.js",
-    "static/css/main.c42f5228.chunk.css.map": "/altzlab2/static/css/main.c42f5228.chunk.css.map",
-    "static/js/2.381d4690.chunk.js.LICENSE.txt": "/altzlab2/static/js/2.381d4690.chunk.js.LICENSE.txt",
+    "static/css/main.0e932cb2.chunk.css.map": "/altzlab2/static/css/main.0e932cb2.chunk.css.map",
+    "static/js/2.18c4e460.chunk.js.LICENSE.txt": "/altzlab2/static/js/2.18c4e460.chunk.js.LICENSE.txt",
     "static/media/delete.png": "/altzlab2/static/media/delete.ceb7f855.png",
     "static/media/endView.jpeg": "/altzlab2/static/media/endView.372dbf44.jpeg",
     "static/media/multi.jpeg": "/altzlab2/static/media/multi.23759836.jpeg",
@@ -19,9 +19,9 @@
     "static/media/three.jpeg": "/altzlab2/static/media/three.a92cd407.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5e645191.js",
-    "static/js/2.381d4690.chunk.js",
-    "static/css/main.c42f5228.chunk.css",
-    "static/js/main.0f24622e.chunk.js"
+    "static/js/runtime-main.e8428fea.js",
+    "static/js/2.18c4e460.chunk.js",
+    "static/css/main.0e932cb2.chunk.css",
+    "static/js/main.09f631b3.chunk.js"
   ]
 }
