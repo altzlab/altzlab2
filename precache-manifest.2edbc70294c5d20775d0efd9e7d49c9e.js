@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4372b04e9daebdab33c508535840d75d",
+    "revision": "10f7260bf542f83e4e72e2d46935208a",
     "url": "/altzlab2/index.html"
   },
   {
-    "revision": "b436c811d0ccea882e02",
+    "revision": "efd1e7299ce3f1d052ca",
     "url": "/altzlab2/static/css/main.0e932cb2.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/altzlab2/static/js/2.18c4e460.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b436c811d0ccea882e02",
-    "url": "/altzlab2/static/js/main.09f631b3.chunk.js"
+    "revision": "efd1e7299ce3f1d052ca",
+    "url": "/altzlab2/static/js/main.e5b26cce.chunk.js"
   },
   {
     "revision": "42b3e7ea9c6dcf93cb47",
